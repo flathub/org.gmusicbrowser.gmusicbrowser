@@ -38,7 +38,7 @@
             "sources": [{
                 "type": "git",
                 "url": "https://github.com/squentin/gmusicbrowser.git",
-                "commit": "547b6312c9be7647ae5e7f55eb4d7fbf2cd49b8e"
+                "commit": "ea4fd922200cf218b3a35e76db9cc05a69e275d8"
             }]
         }
     ]
