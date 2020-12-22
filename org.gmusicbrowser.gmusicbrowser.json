@@ -4,7 +4,7 @@
     "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "gmusicbrowser",
-    "rename-appdata-file": "gmusicbrowser.appdata.xml",
+    "rename-appdata-file": "org.gmusicbrowser.metainfo.xml",
     "rename-desktop-file": "gmusicbrowser.desktop",
     "rename-icon": "gmusicbrowser",
     "copy-icon": true,
@@ -30,15 +30,15 @@
             "name": "gmusicbrowser",
             "buildsystem": "simple",
             "build-commands": [
-                "sed -i '7i\\ <content_rating type=\"oars-1.1\" />' gmusicbrowser.appdata.xml",
-                "sed -i '34i\\ <releases>\\n  <release date=\"2020-06-01\" version=\"git-547b631\"/>\\n </releases>' gmusicbrowser.appdata.xml",
+                "sed -i '7i\\ <content_rating type=\"oars-1.1\" />' org.gmusicbrowser.metainfo.xml",
+                "sed -i '34i\\ <releases>\\n  <release date=\"2020-12-22\" version=\"f12a1003ec87c349f687200b8be90c0190fe1c62\"/>\\n </releases>' org.gmusicbrowser.metainfo.xml",
                 "sed -i 's|#!/usr/bin/perl|#!/bin/env perl|g' gmusicbrowser.pl",                
                 "make install prefix='/app'"
             ],
             "sources": [{
                 "type": "git",
                 "url": "https://github.com/squentin/gmusicbrowser.git",
-                "commit": "ea4fd922200cf218b3a35e76db9cc05a69e275d8"
+                "commit": "f12a1003ec87c349f687200b8be90c0190fe1c62"
             }]
         }
     ]
