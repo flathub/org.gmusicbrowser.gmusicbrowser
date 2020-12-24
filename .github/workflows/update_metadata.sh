@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# Prints all commands executed
+set -x
+
 # Gets the latest gmusicbrowser commit hash
 LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40);
 
