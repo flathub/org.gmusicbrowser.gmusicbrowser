@@ -4,7 +4,7 @@
 LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40);
 
 # Saves the location of the manifest file
-MANIFEST_FILE=../../org.gmusicbrowser.gmusicbrowser.json
+MANIFEST_FILE=org.gmusicbrowser.gmusicbrowser.json
 
 # check if the latest commit hash is already in the file and if yes, updates it
 if grep -q $LATEST_COMMIT $MANIFEST_FILE
