@@ -219,22 +219,7 @@
         {
             "name": "libintl-perl",
             "buildsystem": "simple",
-            "build-commands": [            "name": "perl-net-dbus",
-            "buildsystem": "simple",
             "build-commands": [
-                "perl Makefile.PL PREFIX=/app LIB=/app/lib",
-                "make",
-                "make install"
-            ],
-            "post-install": [
-                "find ${FLATPAK_DEST}/lib/ -name \\*.so -exec chmod u+w {} \\;"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/D/DA/DANBERR/Net-DBus-1.2.0.tar.gz",
-                "sha256": "e7a1ac9ef4a1235b3fdbd5888f86c347182306467bd79abc9b0756a64b441cbc"
-            }]
-        },
                 "perl Makefile.PL PREFIX=/app LIB=/app/lib",
                 "make",
                 "make install"
@@ -248,7 +233,8 @@
                 "sha256": "cad0b1fd0abfa1340dea089ec45ee3dacd9710c9fd942c064bb8124273b3caa9"
             }]
         },
-            "name": "perl-html-entities",
+	{
+	    "name": "perl-html-entities",
             "buildsystem": "simple",
             "build-commands": [
                 "perl Makefile.PL PREFIX=/app LIB=/app/lib",
