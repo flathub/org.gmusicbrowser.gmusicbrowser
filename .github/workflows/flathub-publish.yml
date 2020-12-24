@@ -15,9 +15,9 @@ jobs:
           LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40)
           echo $LATEST_COMMIT
 
-      - name: Get Date
+      - name: Get Escaped Date
         run: |          
-          DATE=$(date +"%Y-%m-%d")
+          DATE="\\\"$(date +"%Y-%m-%d")\\\""
           echo $DATE
 
       - name: Update Flathub Metadata
