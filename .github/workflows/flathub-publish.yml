@@ -17,7 +17,7 @@ jobs:
 
       - name: Update Flathub Metadata
         run: |
-          echo Add other actions to build,
+          sed -i "41s/.*/\t\t\t\t\"commit\": \"$LATEST_COMMIT\"/" org.gmusicbrowser.gmusicbrowser.json
           echo test, and deploy your project.
           ls
 
