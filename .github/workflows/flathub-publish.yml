@@ -15,18 +15,10 @@ jobs:
           LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40)
           echo $LATEST_COMMIT
 
-      - name: Get Escaped Date
-        run: |          
-          DATE="\\\"$(date +"%Y-%m-%d")\\\""
-          echo $DATE
-
       - name: Update Flathub Metadata
-        run: |
-          
+        run: |          
           sed -i "s/\"commit\": \"\(.*\)\"/\"commit\": \"$LATEST_COMMIT\"/g" org.gmusicbrowser.gmusicbrowser.json
-          echo test, and deploy your project.
-          ls
-
+          
       - name: Build Flathub Package
         run: |
           echo Add other actions to build,
