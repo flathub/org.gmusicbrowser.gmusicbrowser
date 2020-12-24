@@ -1,0 +1,19 @@
+name: Flathub Publish
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'  
+  workflow_dispatch:
+
+jobs:
+  update-flathub-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      
+      - name: Run update Script
+        run: |    
+          chmod +x ./.github/workflows/update_metadata.sh
+          ./.github/workflows/update_metadata.sh
+
+
