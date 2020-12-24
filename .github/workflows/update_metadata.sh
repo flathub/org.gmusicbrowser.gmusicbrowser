@@ -12,5 +12,5 @@ then
     echo "Flatpak manifest is up to date. Nothing to do"
 else
     echo "Pointing Flatpak manifest to latest build";
-    sed -i "39s/.*/\t\t\t\t\"commit\": \"$LATEST_COMMIT\"/" $MANIFEST_FILE;
+    sed -i "39s/.*/\t\t\"commit\": \"$LATEST_COMMIT\"/" $MANIFEST_FILE;
 fi
