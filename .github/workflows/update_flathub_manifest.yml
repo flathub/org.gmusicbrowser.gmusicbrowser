@@ -16,4 +16,5 @@ jobs:
           chmod +x ./.github/workflows/update_metadata.sh
           ./.github/workflows/update_metadata.sh
 
-
+      - uses: stefanzweifel/git-auto-commit-action@v4 # Commits updated files to repo on any changes
+          
