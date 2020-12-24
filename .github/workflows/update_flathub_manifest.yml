@@ -1,4 +1,4 @@
-name: Flathub Publish
+name: Update Flathub Manifest
 
 on:
   schedule:
