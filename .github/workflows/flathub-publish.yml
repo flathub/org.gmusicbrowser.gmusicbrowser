@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_daily_flathub:
+  build-daily-flathub:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
