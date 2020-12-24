@@ -15,8 +15,14 @@ jobs:
           LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40)
           echo $LATEST_COMMIT
 
+      - name: Get Date
+        run: |          
+          DATE=$(date +"%Y-%m-%d")
+          echo $DATE
+
       - name: Update Flathub Metadata
         run: |
+          
           sed -i "41s/.*/\t\t\t\t\"commit\": \"$LATEST_COMMIT\"/" org.gmusicbrowser.gmusicbrowser.json
           echo test, and deploy your project.
           ls
