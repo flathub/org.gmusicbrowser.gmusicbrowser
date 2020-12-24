@@ -30,8 +30,6 @@
             "name": "gmusicbrowser",
             "buildsystem": "simple",
             "build-commands": [
-                "sed -i '7i\\ <content_rating type=\"oars-1.1\" />' org.gmusicbrowser.metainfo.xml",
-                "sed -i '34i\\ <releases>\\n  <release date=\"2020-12-22\" version=\"f12a1003ec87c349f687200b8be90c0190fe1c62\"/>\\n </releases>' org.gmusicbrowser.metainfo.xml",
                 "sed -i 's|#!/usr/bin/perl|#!/bin/env perl|g' gmusicbrowser.pl",                
                 "make install prefix='/app'"
             ],
