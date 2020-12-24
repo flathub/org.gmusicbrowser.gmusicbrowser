@@ -9,8 +9,8 @@ MANIFEST_FILE=org.gmusicbrowser.gmusicbrowser.json
 # check if the latest commit hash is already in the file and if yes, updates it
 if grep -q $LATEST_COMMIT $MANIFEST_FILE
 then
+    echo "Flatpak manifest is up to date. Nothing to do"
+else
     echo "Pointing Flatpak manifest to latest build";
     sed -i "39s/.*/\t\t\t\t\"commit\": \"$LATEST_COMMIT\"/" $MANIFEST_FILE;
-else
-    echo "Flatpak manifest is up to date. Nothing to do"
 fi
