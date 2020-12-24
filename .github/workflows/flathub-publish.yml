@@ -11,12 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Get Latest Commit ID
-        run: |
-          git clone https://github.com/squentin/gmusicbrowser.git
-          cd gmusicbrowser
-          LATEST_COMMIT=$(git log -n1 --format=format:"%H")
+        run: |          
+          LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.git | head -n 1 |  head -c 40)
           echo $LATEST_COMMIT
-          cd ../
 
       - name: Update Flathub Metadata
         run: |
