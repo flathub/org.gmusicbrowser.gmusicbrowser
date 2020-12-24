@@ -22,8 +22,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Update Latest Version
+      - name: Get Latest Commit ID
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
           ls
+
+      - name: Update Flathub Metadata
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          ls
+
+      - name: Build Flathub Package
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          ls
+
