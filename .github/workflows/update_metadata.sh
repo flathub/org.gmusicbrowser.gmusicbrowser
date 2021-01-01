@@ -6,7 +6,7 @@ LATEST_COMMIT=$(git ls-remote --heads https://github.com/squentin/gmusicbrowser.
 # Saves the location of the manifest file
 MANIFEST_FILE=org.gmusicbrowser.gmusicbrowser.json
 
-# check if the latest commit hash is already in the file and if yes, updates it
+# check if the latest commit hash is already in the file and if not, updates it
 if grep -q $LATEST_COMMIT $MANIFEST_FILE
 then
     echo "Flatpak manifest is up to date. Nothing to do"
