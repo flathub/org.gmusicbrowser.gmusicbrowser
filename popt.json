@@ -1,0 +1,14 @@
+{
+    "name": "popt",
+    "modules": [
+        {
+            "name": "popt",
+            "buildsystem": "autotools",
+            "sources": [{
+                "type": "archive",
+                "url": "http://rpm5.org/files/popt/popt-1.16.tar.gz",
+                "sha256": "13c34f4af1d389668dd2018a816d4a526aaede6a37f5de80d7be1eec1564f820"
+            }]
+        }
+    ]
+}

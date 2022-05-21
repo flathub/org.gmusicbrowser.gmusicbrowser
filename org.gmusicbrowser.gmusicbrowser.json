@@ -1,7 +1,7 @@
 {
     "app-id": "org.gmusicbrowser.gmusicbrowser",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "gmusicbrowser",
     "rename-appdata-file": "org.gmusicbrowser.metainfo.xml",
@@ -24,6 +24,7 @@
         "env": {"PERL5LIB": "/app/lib"}
     },
     "modules": [
+        "popt.json",
         "audio-libs.json",
         "perl-libs.json",
         {
@@ -36,7 +37,7 @@
             "sources": [{
                 "type": "git",
                 "url": "https://github.com/squentin/gmusicbrowser.git",
-		"commit": "73089de1a70f537dc790056a50802617ab0a1725"
+		        "commit": "73089de1a70f537dc790056a50802617ab0a1725"
             }]
         }
     ]
