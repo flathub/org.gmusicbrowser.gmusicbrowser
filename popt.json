@@ -3,12 +3,11 @@
     "modules": [
         {
             "name": "popt",
-            "buildsystem": "autotools",
             "sources": [{
-                "type": "archive",
-                "url": "http://rpm5.org/files/popt/popt-1.16.tar.gz",
-                "sha256": "13c34f4af1d389668dd2018a816d4a526aaede6a37f5de80d7be1eec1564f820"
-            }]
+                    "type": "archive",
+                    "url": "http://rpm5.org/files/popt/popt-1.16.tar.gz",
+                    "sha256": "e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8"
+                }]
         }
     ]
 }
