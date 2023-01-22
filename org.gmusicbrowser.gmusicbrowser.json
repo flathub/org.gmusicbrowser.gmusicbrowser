@@ -16,7 +16,6 @@
         "--filesystem=xdg-music",
         "--socket=pulseaudio",
         "--own-name=org.gmusicbrowser",
-        "--own-name=org.gmusicbrowser.gmusicbrowser",
         "--own-name=org.mpris.MediaPlayer2.gmusicbrowser",
         "--env=PERL5LIB=/app/lib"
     ],
