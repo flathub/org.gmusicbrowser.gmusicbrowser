@@ -23,7 +23,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz",
+                    "url": "https://cpan.metacpan.org/src/5.0/perl-5.34.0.tar.gz",
                     "sha256": "551efc818b968b05216024fb0b727ef2ad4c100f8cb6b43fab615fa78ae5be9a"
                 },
                 {
@@ -46,8 +46,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz",
-                "sha256": "780ff72128c04c2a22e6801187aa9c58cab298407f6e9d062706af1c250bbe98"
+                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8001.tar.gz",
+                "sha256": "673c4387e7896c1a216099c1fbb3faaa7763d7f5f95a1a56a60a2a2906c131c5"
             }]
         },
         {
@@ -79,8 +79,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3293.tar.gz",
-                "sha256": "7316a0c1e7cc5cb3db7211214f45d7bdc2354365a680ac4bd3ac8bf06d1cb500"
+                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3294.tar.gz",
+                "sha256": "d715f5a86bcc187075de85e7ae5bc07b0714d6edc196a92da43986efa44e5cbb"
             }]
         },
         {
@@ -97,8 +97,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-Object-Introspection-0.048.tar.gz",
-                "sha256": "a64f100c21b884616669255d90fcaf1d11a51cde6ff3f3edcb835a920d2fbd05"
+                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-Object-Introspection-0.052.tar.gz",
+                "sha256": "555b4f1308939bb3141ea4570ad12e04e27c23329c302c9dc8725409e1049111"
             }]
         },
         {
@@ -115,8 +115,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Cairo-1.107.tar.gz",
-                "sha256": "5e1de126ddf93bd5b13f13a52f50d7f7af1157265b7f10e53d585ee1827be169"
+                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Cairo-1.109.tar.gz",
+                "sha256": "8219736e401c2311da5f515775de43fd87e6384b504da36a192f2b217643077f"
             }]
         },
         {
@@ -145,7 +145,7 @@
                 "make test",
                 "make install"
             ],
-	    "post-install": [
+            "post-install": [
                 "find ${FLATPAK_DEST}/lib/ -name \\*.so -exec chmod u+w {} \\;"
             ],
             "sources": [{
@@ -164,8 +164,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Gtk3-0.037.tar.gz",
-                "sha256": "bf5ae1547294a78ca8ba5a88cb20f99a16e4c82bed55446aa054c944918e3f51"
+                "url": "https://cpan.metacpan.org/authors/id/X/XA/XAOC/Gtk3-0.038.tar.gz",
+                "sha256": "70dc4bf2aa74981c79e15fd298d998e05a92eba4811f1ad5c9f1f4de37737acc"
             }]
         },
         {
@@ -195,8 +195,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/M/MI/MIROD/XML-Twig-3.52.tar.gz",
-                "sha256": "fef75826c24f2b877d0a0d2645212fc4fb9756ed4d2711614ac15c497e8680ad"
+                "url": "https://cpan.metacpan.org/authors/id/M/MI/MIROD/XML-Twig-3.54.tar.gz",
+                "sha256": "0b744a9737a070f95c32154afd526bf5ebe76a59feb8bc1f5dbc6cdaa5e0e529"
             }]
         },
         {
@@ -212,8 +212,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
-                "sha256": "d331332491c51cccfb4cb94ffc44f9cd73378e618498d4a37df9e043661c515d"
+                "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz",
+                "sha256": "ad4aae643ec784f489b956abe952432871a622d4e2b5c619e8855accbfc4d1d8"
             }]
         },
         {
@@ -229,12 +229,12 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://cpan.metacpan.org/authors/id/G/GU/GUIDO/libintl-perl-1.31.tar.gz",
-                "sha256": "cad0b1fd0abfa1340dea089ec45ee3dacd9710c9fd942c064bb8124273b3caa9"
+                "url": "https://cpan.metacpan.org/authors/id/G/GU/GUIDO/libintl-perl-1.35.tar.gz",
+                "sha256": "64abed956aa07d1c8cc816c91cf78642c02faf03ab704ed38031baa07f06b16a"
             }]
         },
-	{
-	    "name": "perl-html-entities",
+        {
+            "name": "perl-html-entities",
             "buildsystem": "simple",
             "build-commands": [
                 "perl Makefile.PL PREFIX=/app LIB=/app/lib",
@@ -258,7 +258,7 @@
             ],
             "sources": [{
                 "type": "file",
-                "url": "https://sources.debian.org/data/main/m/markdown/1.0.1-10/Markdown.pl",
+                "url": "https://sources.debian.org/data/main/m/markdown/1.0.1-14/Markdown.pl",
                 "sha256": "764d57b96a35c48d9e3c4ec4c5c3492cff49f365a3f30e1eed71dc66d50e0c85"
             }]
         }

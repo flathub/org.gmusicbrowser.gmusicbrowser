@@ -4,6 +4,9 @@
         {
             "name": "libao",
             "buildsystem": "autotools",
+            "build-options":{
+                "cflags": "-Wno-error=implicit-function-declaration"
+            },
             "sources": [{
                 "type": "archive",
                 "url": "http://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz",
@@ -13,6 +16,9 @@
         {
             "name": "flac123",
             "buildsystem": "autotools",
+            "build-options":{
+                "cflags": "-Wno-error=implicit-function-declaration"
+            },
             "sources": [{
                 "type": "archive",
                 "url": "https://master.dl.sourceforge.net/project/flac-tools/flac123/0.0.11/flac123-0.0.11.tar.gz",
@@ -32,7 +38,7 @@
                 "commands": ["cp -p /usr/share/automake-*/config.{sub,guess} ."]
             }]
         },
-	{
+        {
             "name": "mpg123",
             "buildsystem": "autotools",
             "sources": [{

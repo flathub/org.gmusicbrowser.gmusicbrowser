@@ -1,7 +1,7 @@
 {
     "app-id": "org.gmusicbrowser.gmusicbrowser",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "gmusicbrowser",
     "rename-appdata-file": "org.gmusicbrowser.metainfo.xml",
@@ -15,13 +15,19 @@
         "--share=network",
         "--filesystem=xdg-music",
         "--socket=pulseaudio",
-        "--own-name=org.gmusicbrowser",
         "--own-name=org.mpris.MediaPlayer2.gmusicbrowser",
         "--env=PERL5LIB=/app/lib"
     ],
     "build-options" : {
         "env": {"PERL5LIB": "/app/lib"}
     },
+    "cleanup": [
+        "/include",
+        "/share/doc",
+        "/share/man",
+        "*.la",
+        "*.a"
+    ],
     "modules": [
         "popt.json",
         "audio-libs.json",
@@ -33,11 +39,17 @@
                 "sed -i 's|#!/usr/bin/perl|#!/bin/env perl|g' gmusicbrowser.pl",
                 "make install prefix='/app'"
             ],
-            "sources": [{
-                "type": "git",
-                "url": "https://github.com/squentin/gmusicbrowser.git",
-		        "commit": "73089de1a70f537dc790056a50802617ab0a1725"
-            }]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/squentin/gmusicbrowser.git",
+                    "commit": "73089de1a70f537dc790056a50802617ab0a1725"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
+                }
+            ]
         }
     ]
 }
